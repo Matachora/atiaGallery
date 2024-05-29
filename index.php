@@ -14,30 +14,9 @@
         </ul>
     </nav>
     <?php
-    
-    $ruta_imagenes = "media/";
-    $imagenes = opendir( $ruta_imagenes );
-    $hay_imagenes = false;
-    if( $imagenes ) 
-    {
-        while( $imagen = readdir( $imagenes ) )
-        {
-            if( is_file( $ruta_imagenes . $imagen ) && getimagesize( $ruta_imagenes . $imagen ) ) 
-            {
-                echo "<img src='$ruta_imagenes$imagen'>";
-                $hay_imagenes = true;
-            }
-        }
-        closedir( $imagenes );
-    }
-    else
-    {
-        echo "Error: al cargar carpeta de imagenes";
-    }
-    if( !$hay_imagenes )
-    {
-        echo "No hay imagenesaun. Sube la primera imagen";
-    }
+
+    echo "Hola mundo";
+
     ?>
 </body>
 </html>
